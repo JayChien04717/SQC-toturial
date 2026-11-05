@@ -1,43 +1,43 @@
-# 論文導讀｜［自行填入標題］
+# Paper Discussion | [Title]
 
-## 基本資料
+## Paper details
 
-- 作者／年份／DOI／公開連結：［待填］
-- 本次範圍（章節、頁碼、圖號）：［待填］
-- 導讀者／日期／預計時間：［待填］
+- Authors / year / DOI / public link: [To be filled in]
+- Scope: chapters, pages, and figures [To be filled in]
+- Discussion leader / date / estimated time: [To be filled in]
 
-## 研究問題與一句話結論
+## Research question and main conclusion
 
-［用自己的話描述；分清作者證明的結果與你的推論。］
+[Describe the problem in your own words. Distinguish the authors' demonstrated results from your interpretation.]
 
-## 背景與裝置
+## Background and device
 
-［電路圖、器件功能、為什麼需要此設計；圖須附來源。］
+[Explain the circuit, the role of each element, and the motivation for the design. Cite the source of each figure.]
 
-## 核心模型
+## Core model
 
-［Hamiltonian 或電路方程；定義每個符號、單位、基底、近似與適用範圍。］
+[State the Hamiltonian or circuit equations. Define symbols, units, basis, approximations, and validity range.]
 
-| 參數 | 數值／單位 | 來源頁碼 | 模擬／實驗／假設 |
+| Parameter | Value / unit | Source page | Simulation / experiment / assumption |
 |---|---|---|---|
-| EC/h | 待填 | 待填 | 待填 |
-| 頻率／耦合 | 待填 | 待填 | 待填 |
+| EC/h | To be filled in | To be filled in | To be filled in |
+| Frequency / coupling | To be filled in | To be filled in | To be filled in |
 
-## 兩張關鍵圖
+## Key figures
 
-［各用一段說明橫縱軸、控制變數、主要趨勢與支持的結論。］
+[Explain the axes, control variables, trends, and conclusions supported by each selected figure.]
 
-## 可連到本教材的練習
+## Connections to the exercises
 
-- Metal：［幾何參數如何改變 C、模態或 linewidth？］
-- QuTiP：［模型如何產生 spectrum、ZZ 或 pulse response？］
+- Metal: [How does geometry affect capacitance, modes, or linewidth?]
+- QuTiP: [How does the model produce a spectrum, ZZ, or pulse response?]
 
-## 討論問題
+## Discussion questions
 
-1. 哪個近似最可能影響結論？
-2. 若把一個參數改變 10%，預期哪張圖會改變？理由？
-3. 哪個可測量量能區分兩種模型？
+1. Which approximation is most likely to affect the conclusion?
+2. If a parameter changes by 10%, which figure should change, and why?
+3. Which observable could distinguish two competing models?
 
-## 限制與未決問題
+## Limitations and open questions
 
-［缺少的參數、資料、邊界條件與不能下的結論。］
+[Identify missing parameters, data, boundary conditions, and conclusions that cannot yet be drawn.]

@@ -1,14 +1,16 @@
-# 02｜晶片設計與電磁模擬
-學習目標：自行查閱 Metal 官方教材，完成設計、求解與結果解釋。每題先閱讀指定來源、重做官方範例，再完成自己的變化題。完整作業需真實求解結果與收斂證據。
+# 02 | Design a Single-Qubit System
 
-| 題目 | 主題 | 學習／作業文件 |
+Develop one connected TransmonCross design through four exercises. Learn the implementation from the official Metal tutorials, then choose and tune the geometry and model parameters yourself.
+
+| Exercise | Goal | Guide |
 |---|---|---|
-| M1 | Layout 與參數化 | [01_layout.md](01_layout.md) |
-| M2 | Capacitance matrix 與 EC | [02_capacitance_ec.md](02_capacitance_ec.md) |
-| M3 | Eigenmode 與場型 | [03_eigenmode.md](03_eigenmode.md) |
-| M4 | S21 與 linewidth | [04_linewidth.md](04_linewidth.md) |
+| M1 | Build a TransmonCross system with a readout resonator, charge line, and CPW feedline | [Layout](01_layout.md) |
+| M2 | Tune EC/h to 250 MHz using the M1 layout | [Capacitance and EC](02_capacitance_ec.md) |
+| M3 | Tune the transmon transition to 4 GHz and the readout resonator to 6 GHz | [Eigenmodes](03_eigenmode.md) |
+| M4 | Tune the readout resonator's loaded linewidth to 2 MHz | [Linewidth](04_linewidth.md) |
 
-共同要求：說明幾何、材料、節點／埠、邊界條件、junction 模型、求解器設定、單位與收斂。操作前先讀 [solver 準備清單](solver_workflow.md)。
+Use the same evolving layout throughout. Changes made for a later target can affect earlier results, so recheck EC, frequencies, and linewidth after tuning.
 
-預設入門器件為 transmon 與 CPW resonator；作業中的尺寸掃描是教學設定，不代表已最佳化或適合製作。
+For each calculation, understand the geometry, materials, nodes or ports, boundary conditions, junction model, units, and convergence. Start with the [Solver checklist](solver_workflow.md).
 
+Numerical convergence and proximity to a design target are separate checks. The instructor can set target tolerances appropriate to the available solver accuracy; the convergence checks in each exercise are starting points.

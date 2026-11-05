@@ -1,27 +1,34 @@
-# Q2｜靜態 ZZ Strength
-先完成 Q1，沿用相同模型與參數。
+# Q2 | Static ZZ Strength
 
-## 到哪裡學
-- [QuTiP Basic Operations](https://qutip.readthedocs.io/en/stable/guide/guide-basics.html)：eigenstates、overlap 與 expectation。
-- [QuTiP Tensor Products](https://qutip.readthedocs.io/en/stable/guide/guide-tensor.html)：複合基底及算符。
-- [QuTiP Master Equation Guide](https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-master.html)：延伸題的時間演化。
+Complete Q1 and use the same model and parameters.
 
-這些官方章節教的是工具。ZZ 的模型與態標籤需要學員自己組合，不預設官網提供完全相同的現成範例。
+## Where to learn
 
-## 題目與定義
-本作業定義 ζ = (E11 − E10 − E01 + E00)/h，以 MHz 回報。Eij 指與 bare |ij〉對應的 dressed energy，如何建立對應也是本題的一部分。
-1. 自行提出一致的四態指派規則，避免同一本徵態被配給兩個標籤。
-2. 掃 f2，繪製 ζ 與四個 dressed-state overlaps。
-3. 指出 |11〉與 |20〉／|02〉強混合區，說明何時 computational-state ZZ 的解讀不再穩健。
-4. 比較 g=0、10、20 MHz，在遠離共振的工作點討論趨勢。
-5. 比較 N=2、3、4、5，解釋高能態對 ZZ 的影響與模型限制。
-6. 選一個低混合工作點，討論 ζ 與有效 Z⊗Z 項係數、條件頻移的關係，明確定義 Z 與 2π convention。
+- [QuTiP Basic Operations](https://qutip.readthedocs.io/en/stable/guide/guide-basics.html): eigenstates, overlaps, and expectation values.
+- [QuTiP Tensor Products](https://qutip.readthedocs.io/en/stable/guide/guide-tensor.html): composite bases and operators.
+- [QuTiP Master Equation Guide](https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-master.html): dynamics for the extension exercise.
 
-## 延伸題
-用兩種控制 qubit 初態進行 conditional Ramsey，從相位隨時間的變化估計 ZZ，與本徵能量差比較。若直接交換仍明顯，需說明如何分離 population dynamics 與相位。
+These resources teach the tools. You must combine them to build the ZZ model and label the relevant states.
 
-## 繳交與驗收
-ZZ 掃描、四態標籤與 overlaps、零耦合極限、截斷比較、一個工作點的解釋。不得只用排序後第幾個能量直接指定 E11。
+## Definition
 
-口試：ζ 在某處突然跳變，如何判斷是物理現象、態標籤切換，還是數值問題？
+Use ζ = (E11 − E10 − E01 + E00)/h and express it in MHz. Eij denotes the dressed energy associated with bare |ij〉. Establishing that association is part of the exercise.
 
+## Exercises
+
+1. Define a consistent assignment rule for the four states, avoiding assigning one eigenstate to two labels.
+2. Sweep f2 and plot ζ alongside the four dressed-state overlaps.
+3. Identify strong |11〉–|20〉 or |11〉–|02〉 mixing. Explain where a computational-state ZZ interpretation becomes unreliable.
+4. Compare g = 0, 10, and 20 MHz, and discuss trends at a dispersive operating point.
+5. Compare N = 2, 3, 4, and 5. Explain the role of higher levels and model limitations.
+6. At a weakly mixed operating point, relate ζ to the effective Z⊗Z coefficient and conditional frequency shift. Define the Z and 2π conventions.
+
+## Extension
+
+Perform conditional Ramsey evolution for two control-qubit initial states. Estimate ZZ from the phase evolution and compare it with the energy-difference method. If exchange dynamics remain significant, explain how they affect the interpretation.
+
+## Learning checks and discussion
+
+Test zero coupling and truncation convergence. Do not identify E11 solely by its sorted energy index.
+
+If ζ suddenly jumps, how can you distinguish a physical feature from label switching or a numerical problem?

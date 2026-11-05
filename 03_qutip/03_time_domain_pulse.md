@@ -1,25 +1,29 @@
-# Q3｜Time-domain Pulse、Leakage 與耗散
-## 到哪裡學
-- [Lindblad Master Equation Solver](https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-master.html)：初態、演化與 expectation。
-- [Time-dependent Hamiltonians](https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-time.html)：時間相依驅動。
-- [Solver API](https://qutip.readthedocs.io/en/stable/apidoc/solver.html)：查閱容差、內部步長與結果儲存。
+# Q3 | Time-Domain Pulses, Leakage, and Dissipation
 
-## 教學設定
-單 transmon，f01=5.0 GHz，alpha=−0.25 GHz，先保留 3 個能階，以 |0〉為初態。可用 rotating frame + RWA，但需自行寫出 frame、detuning 與 amplitude convention。
+## Where to learn
 
-耗散比較設定：T1=30 μs、Tphi=50 μs。時間軸統一用 ns，學員需推導 collapse operators 並檢查 0–1 coherence 的衰減定義。
+- [Lindblad Master Equation Solver](https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-master.html): initial states, dynamics, and expectation values.
+- [Time-dependent Hamiltonians](https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-time.html): time-dependent drives.
+- [Solver API](https://qutip.readthedocs.io/en/stable/apidoc/solver.html): tolerances, internal step sizes, and result storage.
 
-## 題目
-1. 建立 resonant square pulse，掃脈衝時間或幅度，觀察 Rabi oscillation。
-2. 改成 Gaussian pulse：sigma=10 ns，中心 40 ns，模擬區間 0–80 ns。自行估計初始幅度，再掃幅度校準。
-3. 畫 envelope 及 P0、P1、P2；同時回報最大暫態 P2 與脈衝後 residual P2。
-4. 選 sigma=5、10、20 ns 做比較；調整時間窗口以涵蓋各脈衝，並各自重新校準。
-5. 比較無耗散與指定 T1/Tphi 的結果，分別解釋能量鬆弛與純退相干。
-6. 比較 N=3、4、5，並收緊 ODE 容差及最大步長，說明結果是否穩定。僅增加繪圖取樣點不算積分收斂檢查。
-7. 回答：最高末態 P1 能否代表完整單 qubit gate fidelity？還缺少哪些測試？
+## Teaching parameters
 
-## 繳交與驗收
-Hamiltonian、pulse 定義、幅度校準曲線、population、leakage、耗散與數值收斂比較。population 總和應在數值誤差內為 1，並說明是否存在非物理負值。
+Use one transmon with f01 = 5.0 GHz and alpha = −0.25 GHz. Begin with three levels and the initial state |0〉. You may use a rotating frame and RWA, but define the frame, detuning, and drive-amplitude convention.
 
-延伸：自行到官方文件查找適用工具，完成 DRAG、Ramsey／echo 或雙 qubit 條件脈衝中的一題，說明新增的物理因素。
+For the dissipative comparison, use T1 = 30 μs and Tphi = 50 μs. Express time in ns. Derive suitable collapse operators and verify the 0–1 coherence decay convention.
 
+## Exercises
+
+1. Apply a resonant square pulse. Sweep duration or amplitude to observe Rabi oscillations.
+2. Use a Gaussian pulse with sigma = 10 ns, center = 40 ns, and simulation interval 0–80 ns. Estimate an initial amplitude and calibrate it with an amplitude sweep.
+3. Plot the envelope and P0, P1, and P2. Compare maximum transient P2 with residual P2 after the pulse.
+4. Compare sigma = 5, 10, and 20 ns. Adapt the time window to contain each pulse and recalibrate each case.
+5. Compare ideal evolution with the specified T1 and Tphi. Explain relaxation and pure dephasing separately.
+6. Compare N = 3, 4, and 5, then tighten ODE tolerances and maximum step size. Increasing only the plotted sample count is not an integration convergence test.
+7. Can the highest final P1 establish full single-qubit gate fidelity? What additional tests are needed?
+
+## Learning checks and discussion
+
+Check population normalization and any nonphysical negative values. Understand the differences among pulse calibration, population transfer, leakage, and gate fidelity.
+
+Extension: use the official documentation to investigate DRAG, Ramsey / echo, or a conditional two-qubit pulse. Explain the additional physics.

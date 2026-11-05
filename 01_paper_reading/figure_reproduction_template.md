@@ -1,13 +1,15 @@
-# 圖表重現紀錄
+# Figure Reproduction Notes
 
-- 論文／圖號／頁碼／引用：
-- 圖中要驗證的物理現象：
-- 數據來源與取得方式（作者資料／讀圖／自行模擬）：
-- 原始參數與無法取得的參數：
-- 重現模型、基底、截斷與近似：
-- 使用的程式與版本：
-- x/y 軸單位及 normalization：
-- 收斂檢查與誤差來源：
-- 原圖與重現圖對照：
-- 哪些趨勢一致、哪些不一致，可能原因：
-- 所有自行假設的參數：
+Optional working notes for a selected figure.
+
+- Paper / figure number / page / citation:
+- Physical effect to investigate:
+- Data source and method: author data, digitization, or independent simulation:
+- Available and missing parameters:
+- Model, basis, truncation, and approximations:
+- Tools and versions:
+- Axis units and normalization:
+- Convergence checks and uncertainty sources:
+- Comparison with the original figure:
+- Agreement, disagreement, and possible explanations:
+- All independently assumed parameters:

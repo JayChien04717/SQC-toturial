@@ -1,10 +1,18 @@
-# 01｜論文導讀（內容由授課者編寫）
+# 01 | Paper Reading
 
-根目錄已有 `ding-leonding-phd-physics-2023-thesis (1).pdf`，保留原位。先在模板選定章節與頁碼，再依主題拆成數篇導讀；這裡沒有自動解讀或宣稱重現該論文。
+The instructor prepares the scientific content and selects the reading scope.
 
-1. 複製 `paper_template.md` 為 `paper_01_主題.md`，填入問題、主要結論與證據。
-2. 每次指定 1–2 張圖或一個模型，而非一次閱讀整本論文。
-3. 用 `figure_reproduction_template.md` 記錄重現工作，分清論文數據、讀圖數據與自己的模擬。
-4. 用 5 分鐘口頭說明「假設 → 方程 → 圖 → 可驗證預測」，再接到 Metal 或 QuTiP 練習。
+The existing thesis PDF remains in the root folder. Select chapters and pages before splitting the material into focused discussions. This guide does not summarize or claim to reproduce the thesis.
 
-驗收：同學能指出關鍵數字來自哪頁、採用何種近似、哪些量可從電磁求解取得、哪些必須由非線性 Hamiltonian 或實驗決定。無法重現的圖可先提出具體缺失資料清單，不需自行補造參數。
+## Suggested approach
+
+1. Copy [paper_template.md](paper_template.md) for each topic and fill in the research question, main conclusions, and supporting evidence.
+2. Focus each discussion on one model or one to two figures.
+3. Use the optional [Figure reproduction notes](figure_reproduction_template.md) to distinguish author data, digitized data, and independent simulations.
+4. Explain the chain “assumptions → equations → figures → testable predictions,” then connect it to a Metal or QuTiP exercise.
+
+## Discussion checks
+
+Can students identify the source of each key number, explain the approximations, and distinguish quantities obtained from electromagnetics from those requiring nonlinear quantum models or experiments?
+
+If a figure cannot be reproduced, identify the missing parameters or data rather than inventing values.

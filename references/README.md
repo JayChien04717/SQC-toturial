@@ -19,4 +19,4 @@ This course organizes learning paths and exercises. Learn implementation details
 | QuTiP master equations | [Guide](https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-master.html) |
 | QuTiP solver API | [API](https://qutip.readthedocs.io/en/stable/apidoc/solver.html) |
 
-The instructor selects the paper-reading material and adds DOIs, figure references, and page numbers. The thesis in the root folder has not been interpreted here and is not treated as evidence for the teaching parameters.
+See the [paper reading guide](../01_paper_reading/README.md) for the three PDFs and recommended sections and figures.

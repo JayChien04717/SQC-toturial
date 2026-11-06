@@ -1,6 +1,6 @@
 # SQC-toturial
 
-A learning guide to superconducting quantum circuits: paper discussions, chip design with Qiskit Metal, and quantum simulations with QuTiP.
+A learning guide to superconducting quantum circuits covering paper discussions, chip design with Qiskit Metal, quantum simulations with QuTiP, and qubit measurements with QICK.
 
 The course provides official learning resources and exercises. Students learn the tools from the official documentation and develop their own implementations.
 
@@ -11,13 +11,15 @@ The course provides official learning resources and exercises. Students learn th
 | Paper reading | Research questions, models, key figures, and discussion; content prepared by the instructor | [Paper reading](01_paper_reading/README.md) |
 | Chip design | One TransmonCross system: EC/h = 250 MHz, f01 = 4 GHz, fr = 6 GHz, and loaded linewidth = 2 MHz | [Chip design](02_chip_design/README.md) |
 | Quantum simulation | Spectrum, ZZ strength, and time-domain pulses | [QuTiP](03_qutip/README.md) |
+| Qubit measurement | FPGA pulse control, readout acquisition, and lab scripts | [QICK](04_qick/README.md) |
 
 ## Learning sequence
 
 1. Complete the official installation and introductory tutorials listed in [Preparation](00_setup/README.md).
-2. Discuss an instructor-selected paper using the [Paper discussion template](01_paper_reading/paper_template.md).
+2. Read the Engineer's Guide, then Long Nguyen and Leon Ding, following the [recommended reading order](01_paper_reading/README.md).
 3. Build a TransmonCross system with a readout resonator, charge line, and CPW feedline. Use the same design through the Metal exercises: layout → EC → eigenmodes → linewidth.
 4. Work through the QuTiP exercises: spectrum → ZZ → pulses.
+5. Learn how the lab runs pulse sequences and acquires readout data with [FPGA and QICK](04_qick/README.md).
 
 ## Suggested schedule
 
@@ -36,9 +38,10 @@ Allow roughly 2–3 hours per session, plus independent study and electromagneti
 ## Folders
 
 - `00_setup`: prerequisites, official starting points, and units.
-- `01_paper_reading`: instructor-editable discussion and figure reproduction templates.
+- `01_paper_reading`: three readings, a recommended reading order, and discussion templates.
 - `02_chip_design`: four Metal and electromagnetic simulation exercises.
 - `03_qutip`: three quantum simulation exercises.
+- `04_qick`: FPGA measurement basics, official QICK demos, and lab scripts.
 - `references`: official resource index.
 
-The existing thesis PDF remains in the root folder. No thesis summary or chapter selection has been prepared. Official links were checked on November 4, 2026; record the versions used when following them.
+Official software links were checked on November 4, 2026. Record the versions used when following them.

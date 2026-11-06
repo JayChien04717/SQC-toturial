@@ -1,6 +1,6 @@
 # SQC-toturial
 
-A learning guide to superconducting quantum circuits covering paper discussions, chip design with Qiskit Metal, quantum simulations with QuTiP, and qubit measurements with QICK.
+A learning guide to superconducting quantum circuits covering paper discussions, chip design with Qiskit Metal, numerical simulation with QuTiP and scqubits, and qubit measurements with QICK.
 
 The course provides official learning resources and exercises. Students learn the tools from the official documentation and develop their own implementations.
 
@@ -10,7 +10,7 @@ The course provides official learning resources and exercises. Students learn th
 |---|---|---|
 | Paper reading | Research questions, models, key figures, and discussion; content prepared by the instructor | [Paper reading](01_paper_reading/README.md) |
 | Chip design | One TransmonCross system: EC/h = 250 MHz, f01 = 4 GHz, fr = 6 GHz, and loaded linewidth = 2 MHz | [Chip design](02_chip_design/README.md) |
-| Quantum simulation | Transmon and fluxonium spectra, charge and phase matrix elements, ZZ strength, and time-domain pulses | [QuTiP](03_qutip/README.md) |
+| Numerical simulation | Transmon and fluxonium spectra, charge and phase matrix elements, ZZ strength, and time-domain pulses | [Numerical simulation](03_numerical_simulation/README.md) |
 | Qubit measurement | FPGA pulse control, readout acquisition, and lab scripts | [QICK](04_qick/README.md) |
 
 ## Learning sequence
@@ -18,7 +18,7 @@ The course provides official learning resources and exercises. Students learn th
 1. Complete the official installation and introductory tutorials listed in [Preparation](00_setup/README.md).
 2. Read the Engineer's Guide, then Long Nguyen and Leon Ding, following the [recommended reading order](01_paper_reading/README.md).
 3. Build a TransmonCross system with a readout resonator, charge line, and CPW feedline. Use the same design through the Metal exercises: layout → EC → eigenmodes → linewidth.
-4. Work through the QuTiP exercises in order, from transmon and fluxonium spectra to static ZZ and time-domain pulses.
+4. Work through the numerical simulation exercises, from transmon and fluxonium spectra to static ZZ and time-domain pulses.
 5. Learn how the lab runs pulse sequences and acquires readout data with [FPGA and QICK](04_qick/README.md).
 
 ## Suggested schedule
@@ -40,7 +40,7 @@ Allow roughly 2–3 hours per session, plus independent study and electromagneti
 - `00_setup`: prerequisites, official starting points, and units.
 - `01_paper_reading`: three readings, a recommended reading order, and discussion templates.
 - `02_chip_design`: four Metal and electromagnetic simulation exercises.
-- `03_qutip`: four quantum simulation exercises.
+- `03_numerical_simulation`: four simulation exercises using QuTiP and scqubits.
 - `04_qick`: FPGA measurement basics, official QICK demos, and lab scripts.
 - `references`: official resource index.
 

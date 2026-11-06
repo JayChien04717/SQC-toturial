@@ -18,5 +18,6 @@ This course organizes learning paths and exercises. Learn implementation details
 | QuTiP time-dependent Hamiltonians | [Guide](https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-time.html) |
 | QuTiP master equations | [Guide](https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-master.html) |
 | QuTiP solver API | [API](https://qutip.readthedocs.io/en/stable/apidoc/solver.html) |
+| scqubits circuit models and parameter sweeps | [Documentation](https://scqubits.readthedocs.io/en/latest/) |
 
 See the [paper reading guide](../01_paper_reading/README.md) for the three PDFs and recommended sections and figures.

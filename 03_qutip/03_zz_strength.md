@@ -1,4 +1,4 @@
-# Q2 | Static ZZ Strength
+# Q3 | Static ZZ Strength
 
 Complete Q1 and use the same model and parameters.
 
@@ -10,9 +10,19 @@ Complete Q1 and use the same model and parameters.
 
 These resources teach the tools. You must combine them to build the ZZ model and label the relevant states.
 
-## Definition
+## What Is Static ZZ?
 
-Use ζ = (E11 − E10 − E01 + E00)/h and express it in MHz. Eij denotes the dressed energy associated with bare |ij〉. Establishing that association is part of the exercise.
+Static ZZ is the change in one qubit's transition frequency when the other qubit switches from $|0\rangle$ to $|1\rangle$. For example, qubit 2 has transition frequency $(E_{01}-E_{00})/h$ when qubit 1 is in $|0\rangle$ and $(E_{11}-E_{10})/h$ when it is in $|1\rangle$. Their difference defines the signed ZZ strength.
+
+$$
+\zeta = \frac{E_{11}-E_{10}-E_{01}+E_{00}}{h}.
+$$
+
+Express $\zeta$ in MHz. Each $E_{ij}$ is the dressed energy associated with bare $|ij\rangle$. In the effective diagonal two-qubit Hamiltonian, the interaction term in $H/h$ is $(\zeta/4)Z\otimes Z$, with $Z|0\rangle=|0\rangle$ and $Z|1\rangle=-|1\rangle$. Residual static ZZ causes an unwanted conditional phase to accumulate while the qubits idle.
+
+## FTF Reference
+
+The fluxonium–transmon–fluxonium (FTF) architecture couples two fluxonium qubits through a tunable transmon. Read §5.1.2 and Figs. 5-1 and 5-3 for the device layout, how the coupler helps suppress static ZZ, and a comparison of measured and simulated ZZ versus coupler flux. [Leon Ding's thesis, Chapter 5](<../01_paper_reading/ding-leonding-phd-physics-2023-thesis (1).pdf>)
 
 ## Exercises
 

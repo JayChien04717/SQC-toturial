@@ -12,9 +12,10 @@ Learn the tools from the official documentation and build your own models. These
 | Exercise | Goal |
 |---|---|
 | [Q1: Spectrum](01_spectrum.md) | Build a Hamiltonian, identify levels, and understand avoided crossings |
-| [Q2: ZZ strength](02_zz_strength.md) | Calculate conditional shifts, label dressed states, and test approximations |
-| [Q3: Time-domain pulses](03_time_domain_pulse.md) | Observe Rabi oscillations, calibrate pulses, and study leakage and dissipation |
+| [Q2: Fluxonium spectrum vs. flux](02_fluxonium_spectrum.md) | Sweep external flux and plot the spectrum and charge and phase transition matrix elements |
+| [Q3: ZZ strength](03_zz_strength.md) | Calculate conditional frequency shifts and connect them to the FTF architecture |
+| [Q4: Time-domain pulses](04_time_domain_pulse.md) | Observe Rabi oscillations, calibrate pulses, and study leakage and dissipation |
 
-Start with a weakly anharmonic transmon model. If a paper uses fluxonium or another device, choose an appropriate Hamiltonian and basis.
+Q1, Q3, and Q4 use weakly anharmonic transmon models. Q2 introduces the fluxonium Hamiltonian and an LC oscillator basis.
 
 For each calculation, understand the equations, parameters, units, initial state, basis, truncation, and numerical settings. The initial QuTiP parameters are independent teaching assumptions. When modeling the Metal design, replace them consistently with extracted device parameters.
